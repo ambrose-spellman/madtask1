@@ -1,0 +1,50 @@
+.footer
+    background: $main-color1
+    padding: 30px 0
+    position: relative
+    color: #fff
+    border-top: 5px solid lighten( $main-color1, 8% )
+    margin: 0
+    +mobile-wide
+        font-size: 12px
+    &_row
+        display: flex
+        justify-content: space-between
+        +mobile-wide
+            flex-direction: column
+            flex-flow: wrap-reverse
+
+    &_item 
+        width: 50%   
+        text-align: center
+        +mobile-wide
+            width: 100%
+    &_design-author 
+        color: #fff   
+        border-bottom: 1px solid #fff
+        margin-top: 17px
+        display: inline-block
+    &_social 
+        display: inline-block 
+    &_social-link 
+        display: inline-block 
+    &_social-icon
+        color: $main-color1
+        background: #fff
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        font-size: 25px
+        padding: 10px 7px
+        margin: 0 5px
+        +mobile-wide 
+            width: 40px
+            height: 40px
+            font-size: 20px
+    &_email 
+        color: #fff
+        margin-right: 20px
+
+
+
+

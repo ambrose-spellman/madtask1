@@ -1,0 +1,159 @@
+.reviews 
+    display: flex
+    justify-content: space-between
+    +desctop 
+        padding: 0 15px
+    +tablet 
+        flex-direction: column
+    &_item 
+        width: 30%
+        text-align: center
+        padding: 30px 50px
+        border: 2px solid $main-color2
+        border-radius: 5px
+        +tablet 
+            width: 100%
+            margin-bottom: 50px
+        +mobile-wide 
+            padding: 30px 15px
+    &_item_image
+        border-radius: 50%
+        width: 150px
+        height: 150px
+        border: 5px solid $main-color2
+    &_item_name 
+        display: block
+        color: $main-color2
+        padding: 15px 0
+        text-transform: uppercase
+    &_item_quote
+        display: inline-block
+        margin: 0
+        padding: 20px 0 40px 0
+    &_item_qoute-ic 
+        font-size: 50px
+        color: $main-color2
+
+
+
+
+$white: #fff
+@mixin perspective($pixels) 
+    -webkit-perspective: $pixels
+    -moz-perspective: $pixels
+    -o-perspective: $pixels
+    perspective: $pixels
+@mixin transition($speed) 
+    -webkit-transition: -webkit-transform $speed
+    -moz-transition: -moz-transform $speed
+    -o-transition: -o-transform $speed
+    transition: transform $speed
+@mixin transform-style() 
+    -webkit-transform-style: preserve-3d
+    -moz-transform-style: preserve-3d
+    -o-transform-style: preserve-3d
+    transform-style: preserve-3d
+
+@mixin transform($degrees) 
+    -webkit-transform: rotateX( $degrees + deg)
+    -moz-transform: rotateX( $degrees + deg)
+    -o-transform: rotateX( $degrees + deg)
+    transform: rotateX( $degrees + deg)
+
+@mixin backface-visibility() 
+    -webkit-backface-visibility: hidden
+    -moz-backface-visibility: hidden
+    -o-backface-visibility: hidden
+    backface-visibility: hidden
+.reviews_form 
+    padding: 100px 0 200px           
+
+.cont-contactBtn 
+    height: 150px
+    margin: 0 auto
+    width: 450px
+    position: relative
+    @include perspective(800px)
+    +mobile-wide 
+        width: 350px
+    +mobile 
+        width: 265px
+    .cont-flip 
+        position: absolute
+        @include transition(.5s)
+        @include transform-style()
+        height: 100%
+        width: 100%
+        
+        .front, .back 
+            display: block
+            margin: 0
+            height: 100%
+            width: 100%
+            position: absolute
+            border-radius: 5px
+            @include backface-visibility;        
+        .front 
+            background-color: $main-color2        
+        .back 
+            background-color: $white
+            @include transform(180)            
+    .btn 
+        margin-top: 45px    
+    .cont-flip.flipped 
+        @include transform(180)   
+    .contact-form 
+        padding: 10%
+        margin-top: 50px
+        width: 100%
+        background: $main-color1
+        input, textarea 
+            border: 1px solid #808080
+            font-size: 14px
+            padding: 10px 0      
+        input[type="text"] 
+            margin-bottom: 8px
+            padding-left: 3%     
+        .gutter 
+            margin-right: 2.8%        
+        textarea 
+            height: 106px
+            padding-left: 3%
+            margin: 16px 0 22px 0
+        input[type="submit"] 
+            background-color: $main-color2
+            border: none
+            color: $white
+            height: 45px
+            width: 100%
+            text-align: center
+    .close 
+        display: block
+        height: 30px
+        width: 30px
+        position: absolute
+        top: -85px
+        right: -8px
+        +mobile 
+            top: -85px
+            right: -7px
+        .fa-times 
+            color: $main-color2
+            font-size: 30px
+.btn 
+    border: 3px $white solid
+    color: $white
+    display: block
+    font-size: 15px
+    font-weight: normal
+    margin: 0 auto
+    padding: 15px 
+    text-align: center
+    text-transform: uppercase
+    text-decoration: none
+    width: 270px
+    +mobile 
+        width: 175px
+
+
+        

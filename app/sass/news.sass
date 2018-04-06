@@ -1,0 +1,91 @@
+.news 
+   
+    &_wrap 
+        +desctop 
+            padding: 0 15px
+    &_item 
+        display: flex
+        margin-bottom: 35px
+        +tablet
+            flex-direction: column
+    &_item_left
+        width: 30%
+        padding: 15px 15px 15px 0
+        box-sizing: border-box
+        +tablet 
+            width: 100%
+    &_item_right
+        width: 70%
+        padding: 15px 
+        box-sizing: border-box
+        position: relative
+        +tablet 
+            width: 100%
+    &_item_date
+        color: $main-color2
+        font-size: 14px
+        display: inline-block
+        background: #eeeeee
+        border-radius: 5px
+        padding: 5px 10px
+    &_item_image
+        border-radius: 5px
+        width: 100%
+    &_item_description
+        font-size: 17px
+    &_item_link
+        +btn-red    
+        display: inline-block
+        margin-top: 18px
+        position: absolute
+        bottom: 15px
+        right: 15px
+        padding: 8px 30px 8px 20px
+        +tablet 
+            position: static
+        &:after
+            content: "\f101"
+            font-family: FontAwesome
+            font-style: normal
+            font-weight: normal
+            text-decoration: inherit
+            color: #ffffff
+            padding-left: 5px
+.news_more 
+    padding: 50px 0
+    +desctop 
+        padding: 50px 15px
+    &_back-btn 
+        +btn-red
+        position: relative
+        padding: 8px 20px 8px 30px
+        +desctop 
+            margin-left: 15px
+        &:before 
+            content: "\f100"
+            font-family: FontAwesome
+            font-style: normal
+            font-weight: normal
+            text-decoration: inherit
+            color: #ffffff
+            padding-right: 5px
+    a 
+        color: $main-color1
+    &_phone 
+        display: inline-block
+        border-bottom: 1px solid $main-color1
+    &_date 
+        color: $main-color2
+        font-size: 14px
+        display: inline-block
+        background: #eeeeee
+        border-radius: 5px
+        padding: 5px 10px
+    &_description 
+        text-transform: uppercase
+        font-size: 27px
+        color: $main-color1
+        +mobile-wide 
+            font-size: 20px
+
+

@@ -1,0 +1,70 @@
+.main_menu_wrap
+	
+.main_menu
+	list-style: none
+	padding: 10px
+	+mobile-wide 
+		position: absolute
+		top: 38px
+		left: 0
+		z-index: 1010
+		background: $main-color1
+		color: #ffffff
+		text-align: left
+		padding: 0
+		display: none
+		width: 100%
+	+mobile 
+		font-size: 12px	
+	.main_menu_item
+		display: inline-block
+		position: relative
+		+mobile-wide 
+			display: block
+		.main_menu_link
+			display: block
+			padding: 15px 10px
+			position: relative
+			color: $main-color1
+			font-weight: 600
+			&:hover,
+			&:focus,
+			&:active
+				color: #ffffff
+				background: $main-color2
+			+mobile-wide 
+				padding: 15px 15px
+				color: #fff
+	.dropdown
+		display: none
+		position: absolute
+		top: 48px
+		left: 0
+		list-style: none
+		background: $main-color2 
+		color: #ffffff
+		padding: 0
+		z-index: 9999
+		+mobile-wide 
+			top: 0
+			left: 183px
+		+mobile 
+			left: 146px
+		li 
+			width: 200px
+			padding: 0
+			a 
+				color: #ffffff
+				padding: 15px 10px
+				display: inline-block
+	> li:hover
+		background:  $main-color2
+		color: #ffffff
+		.dropdown
+			display: block
+		.main_menu_link 
+			color: #ffffff
+		li 
+			&:hover
+				background: darken($main-color2,8%)
+				color: #ffffff

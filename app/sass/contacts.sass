@@ -1,0 +1,39 @@
+.contacts
+    position: relative
+    &_wrap 
+       
+    &_map 
+        height: 500px
+        width: 100%
+        margin: 100px 0
+    &_info 
+        position: absolute
+        top: 100px
+        left: 100px
+        width: 300px
+        height: 300px
+        background: $main-color2
+        z-index: 405
+        color: #ffffff
+        text-align: left
+        font-size: 14px
+        padding: 40px
+        +mobile 
+            top: 50px
+            left: 20px
+            width: 250px
+            height: 270px
+        p
+            &:first-child 
+                font-weight: 600
+                margin: 0
+                padding-bottom: 10px
+                font-size: 17px
+        table 
+            tr 
+                td 
+                    margin: 0 5px
+                .tac 
+                    display: block
+                    text-align: right
+                    margin-left: 20px

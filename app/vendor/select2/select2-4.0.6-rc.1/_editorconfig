@@ -1,0 +1,8 @@
+[*]
+indent_style = tab
+
+[*.{cs,js,pug}]
+indent_size = 4
+
+[*.json]
+indent_size = 2
