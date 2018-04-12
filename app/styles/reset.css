@@ -9,6 +9,3 @@ button,input[type="button"]{cursor: pointer}
 
 .clear{clear:both; font-size:0;}
 .clearfix::after{clear: both; content: "";	display: table;}
-a{text-decoration: none}
-*{box-sizing: border-box};
-    
