@@ -1,0 +1,150 @@
+body {
+    font-family: 'Work Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.3;
+    background: #1b0f0f;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.converter {
+    color: #fff;
+    padding: 0 15px;
+}
+
+.converter_title {
+    margin: 0;
+    padding: 50px 0;
+}
+
+.converter_form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.converter_form-group {
+    width: 50%;
+}
+
+.converter_form-group input[type='text'],
+.converter_form-group input[type='email'],
+.converter_form-group button[type='submit'] {
+    font-family: 'Work Sans';
+    font-size: 20px;
+    height: 45px;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 6px;
+    /* width: 50%; */
+}
+
+.converter_form-group input[type='text'] {
+    width: 100%;
+}
+
+.converter_form-group p {
+    font-size: 20px;
+}
+
+.results {
+    color: #fff;
+    display: flex;
+    padding: 50px 15px 0;
+}
+
+.page-header {
+    width: 30%;
+}
+
+.page-header h1 {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.image_preview {
+    width: 100%;
+    border: 2px solid #840331;
+    padding: 10px;
+}
+
+.video_info {
+    width: 70%;
+    display: flex;
+}
+
+.video_info-title {
+    list-style-type: none;
+}
+
+.video_info-title a {
+    color: #fff;
+}
+
+.video_info-link {
+    color: #840331;
+}
+
+.video_download-link {
+    color: #2196F3;
+}
+
+.video_info-item {
+    width: 50%;
+}
+
+.video_download-link {}
+
+tr,
+th,
+td {
+    padding: 10px 15px
+}
+
+
+/* media queries */
+
+
+/* @media screen and (max-width: 1200px) {
+ 
+} */
+
+@media screen and (max-width: 980px) {
+    .results {
+        flex-direction: column;
+    }
+    .page-header {
+        width: 100%;
+    }
+    .video_info {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .image_preview {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .video_info {
+        flex-direction: column;
+    }
+    .video_info-item {
+        width: 100%;
+    }
+    .converter_form-group {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    tr,
+    th,
+    td {
+        padding: 8px 4px
+    }
+}
